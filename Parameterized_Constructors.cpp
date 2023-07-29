@@ -4,9 +4,8 @@ using namespace std;
 class Point {
 	int a, b; 
 public: 
-	Point(int x) {
+	Point(int x) { // parameterized constructor
 		a = x;
-		cout << "This default constructor\n";
 	}
 	Point(int x, int y) { // parameterized constructor
 		a = x, b = y;
