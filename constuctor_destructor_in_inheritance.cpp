@@ -55,7 +55,7 @@ public :
 	}
 };
 int main() {
-	child2 obj; // check child1 obj, parent obj
+	 child2 obj;
    return 0;
 }
 
