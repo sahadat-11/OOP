@@ -16,7 +16,7 @@ class Counter {
 int Counter :: cnt;
 int main() {
     Counter t1, t2, t3;
-    t1.display();
+    t1.display(); // always return total number of objects
     t2.display();
     t3.display();
 }
