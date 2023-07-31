@@ -7,15 +7,15 @@ public:
 	Test() : num(8) {
 
 	}
-	void operator++() {
-		num += 2;
-	}
 	void print() {
 		cout << "The count is : " << num;
+	}
+	void operator++() { // important
+		num += 2;
 	}
 };
 int main() {
 	Test tt;
-	++tt;
+	++tt; // important
 	tt.print();
 }
