@@ -10,10 +10,10 @@ public:
 	void display() {
 		cout << a << " " << b << "\n";
 	}
-	multiply operator *(multiply c) {
+	multiply operator +(multiply c) {
 		multiply temp;
-		temp.a = a * c.a;
-		temp.b = b * c.b;
+		temp.a = a + c.a;
+		temp.b = b + c.b;
 		return temp;
 	}
 };
@@ -21,6 +21,6 @@ int main() {
 	multiply ob1, ob2, ob3;
 	ob1.getdata(15,20);
 	ob2.getdata(3,45);
-	ob3 = ob1*ob2;
+	ob3 = ob1+ob2;
 	ob3.display();
 }

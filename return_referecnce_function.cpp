@@ -16,4 +16,3 @@ int main(){
     cout<<"The value of x is "<<x<<" and the value of y is "<<y<<endl; 
     return 0;
 }
-
