@@ -31,29 +31,30 @@
 // 	// z is not accessible from D
 // };
 
-//In The Name of ALLAH
-#include<bits/stdc++.h>
+// C++ program to implement
+// Hierarchical Inheritance
+#include <iostream>
+
 using namespace std;
-class samp {
-	int i;
-public:
-	samp(int n) {
-		i = n;
-		cout << "Constructing\n";
-	}
-	~samp() {
-		cout << "Destructing\n";
-	}
-	int get_a() {
-		return i;
-	}
+
+// base class
+class Vehicle {
+  public: Vehicle() {
+    cout << "This is a Vehicle\n";
+  }
 };
-int square(samp o) {
-	return o.get_a() * o.get_a();
-}
+
+// first sub class
+class Car: public Vehicle {};
+
+// second sub class
+class Bus: public Vehicle {};
+
+// main function
 int main() {
-	samp a(10);
-	cout << square(a) << "\n";
-    
+  // Creating object of sub class will
+  // invoke the constructor of base class.
+  Car obj1;
+  //Bus obj2;
   return 0;
 }
