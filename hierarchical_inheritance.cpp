@@ -25,3 +25,6 @@ int main() {
   Bus obj2;
   return 0;
 }
+
+// This is a Vehicle
+//This is a Vehicle
